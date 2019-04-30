@@ -1,0 +1,20 @@
+<div style="background-color: rgba(128, 122, 202, 0.925)">
+    <h1 style="text-align: center">{{ title }}!</h1>
+    <div class="container">
+      <div class= "row">
+        <app-forms (addQuote)="addNewQuote($event)"></app-forms>
+    <ul>
+      <div *ngFor='let quote of quotes;let i = index'>
+        <li id="{{i}}" appStrikethrough>{{quote.name}} <br>{{quote.quote}}<br>{{quote.author}}<br>{{quote.date}}</li>
+        <div >
+       <button  (click)='toogleDetails(i)'>Click me!!</button>
+        </div>
+       <button (click)="like()"> Like </button>
+       <button (click)="dislike()"> Dislike </button>
+        <app-form-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-form-details>
+      </div>
+    
+    </ul>
+    </div>
+    </div>
+    </div>
