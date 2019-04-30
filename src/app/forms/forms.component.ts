@@ -8,7 +8,7 @@ import { Quote } from "../quote";
 })
 export class FormsComponent implements OnInit {
 
-  newQuote = new Quote(0, "", "", "", new Date());
+  newQuote = new Quote(0, "", "", "", );
   public newname: string;
   public newauthor: string;
   public newquote: string;
@@ -24,7 +24,7 @@ export class FormsComponent implements OnInit {
       this.newname,
       this.newquote,
       this.newauthor,
-      this.newdate
+     
     );
     this.addQuote.emit(newQuote);
   }
