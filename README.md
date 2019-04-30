@@ -1,10 +1,19 @@
-# Quotes
+## QUOTES
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Start the project
+
+The project is started with the regular ionic commands.
+
+Run npm install to install all dependencies.
+Run ionic serve to start the development environment.
+To build the project run ionic cordova build android or ionic cordova build ios. In order for you to build an iOS app, you need to run on MacOS.
+An alternative is to emulate the app on a device or upload it to the ionic cloud. From here you can download the ionic view app and use the app on all devices.
 
 ## Code scaffolding
 
@@ -21,6 +30,14 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Creator
+
+The app was created by and is maintained by Noel Bor.
+
+## Copyright and License
+
+Code released under the MIT license.
 
 ## Further help
 
